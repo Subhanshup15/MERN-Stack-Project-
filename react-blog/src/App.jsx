@@ -1,17 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import Header from './layout/Header'
+import  Login,{Profile,Setting}  from './layout/Footer'
+//lOGIN IA DEFULT EXPORT
+//PROFILE AND SETTING ARE NAMED EXPORT
+//{} USE IN THIS THAT THIS IS MULTI EXPORT
 
 function App() {
-  const [count, setCount] = useState(0)
+  return <>
 
-  return (
-    <div style={{ backgroundColor: '#f0f0f0', padding: '100px' }}>
-      <h1 style={{ color: 'red',fontFamily:"cabria" }}>Sagar</h1>
-      <h4 style={{ color: 'green',fontFamily:"cambria" }}>Pardeshi</h4>
+    <div style={{ backgroundColor: '#1ea87aff', padding: '100px' }}>
+
+      <Header />
+      <Login />
+      <Profile />
+      <Setting />
+      <h1 style={{ color: 'blue', fontFamily: "cabria" }}>Sagar</h1>
+      <h4 style={{ color: 'green', fontFamily: "cambria" }}>Pardeshi</h4>
     </div>
-  )
+  </>
+
+
 }
 
 export default App
