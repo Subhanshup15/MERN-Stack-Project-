@@ -7,7 +7,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div style={{ backgroundColor: '#f0f0f0', padding: 'auto' }}>
+    <div style={{ backgroundColor: '#f0f0f0', padding: '100px' }}>
       <h1 style={{ color: 'red',fontFamily:"cabria" }}>Sagar</h1>
       <h4 style={{ color: 'green',fontFamily:"cambria" }}>Pardeshi</h4>
     </div>
