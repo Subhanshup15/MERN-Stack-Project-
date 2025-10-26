@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import { connectDB } from "./databases/db.js";
 import userRoters from "./routes/user.js";
 
+
 dotenv.config();
 
 const app = express(); // ✅ define app before using it

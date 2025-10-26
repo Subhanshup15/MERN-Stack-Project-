@@ -67,5 +67,3 @@ const sendMail = async (email, subject, data) => {
 
     });
 };
-
-export default sendMail;

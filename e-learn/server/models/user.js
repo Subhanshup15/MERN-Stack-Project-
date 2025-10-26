@@ -22,15 +22,15 @@ const userSchema = new mongoose.Schema({
     type: String,
     default: "user",
   },
-  subscriptiom:[{
-    type:mongoose.Schema.Types.ObjectId,
-    ref:"Course",
-  }]
-
-
+  subscription: [ // fixed typo
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Course",
+    }
+  ]
 }, { timestamps: true }); // automatically adds createdAt and updatedAt
 
 // Create the model
-const User = mongoose.model("User", userSchema);
+const user = mongoose.model("user", userSchema); // capitalize model name
 
-export default User;
+export default user;
